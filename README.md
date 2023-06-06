@@ -19,6 +19,8 @@ For a detailed list of changes and version history, please refer to the [CHANGEL
 
 ## Installation
 
+# STEP 1
+
 You need all the jarfiles in the Hiberate "required" folder. You can download these but I have
 included them in the /lib
 
@@ -30,6 +32,26 @@ included them in the /lib
 
  Additionally I set up a PostgreSQL database on Port 5431 (5432 is default) and created a table "Person" with
  rows id = int4, name = varchar.
+
+# STEP 2
+
+Once you have all the Hibernate jarfiles (in /lib) you will need to tell your IDE
+to use these files as resources, just the same way you tell your IDE which
+database driver to use.  HOW you do this depends on which IDE you are using.
+
+# STEP 3
+
+Normally you would start by configuring "hibernate.cfg.xml" to tell Hibernate about
+what database you are using (PostgreSQL, MySQL, SQL Server, etc.) and to tell Hiberate
+about which other XML files are used to describe your tables/POJOs.  But in this
+example, this file has already been configured.
+
+# STEP 4
+
+Normally you would create an XML file that describes each POJO, e.g. what the attributes
+are and what their datatypes are. Since this example uses one POJO named Person, we
+have a single XML file named "Person.hbm.xml". 
+But in this example, this file has already been configured.
 
 ## Javadocs
 
