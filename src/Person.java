@@ -1,3 +1,12 @@
+/**
+ * This is a POJO - Plain Old Java Object. If you look closely, you will see the following:
+ * - simple constructor with no parameters
+ * - all variables are private variables
+ * - getter and setting methods for the variables
+ * - no references to outside library
+ * - no additional business logic
+ */
+
 public class Person {
     private int id;
     private String name;
